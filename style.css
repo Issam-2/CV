@@ -26,6 +26,37 @@ h4 , h5 , h6 {
     margin: 0 auto;
 }
 
+.main > * + * {
+    margin-top: 48px ;
+}
+
+.nav {
+    padding: 4px 8px;
+    color: black;
+}
+
+.nav:hover {
+
+    color: black;
+    background-color: beige;
+}
+
+.nav:active {
+    color: white;
+    background-color: brown;
+}
+
+.nav + .nav {
+    margin-left: 16px;
+}
+
+.main > * {
+      border-top: 2px solid grey;
+}
+
+.main > *:first-child {
+    border-top:  none;
+}
 
     
 
