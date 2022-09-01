@@ -59,5 +59,12 @@ h4 , h5 , h6 {
 }
 
     
+*::selection {
+    background-color: beige ;
+    
+}
 
+.beruf::after {
+    content: "😀";
+}
 
