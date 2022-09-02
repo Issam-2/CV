@@ -22,6 +22,9 @@ h4 , h5 , h6 {
     text-align: center;
     background-color: cyan;
     padding: 48px 16px;
+    position: relative;
+    padding-top: 72px;
+
 }
 
 .main {
@@ -56,6 +59,7 @@ h4 , h5 , h6 {
 
 .main > * {
       border-top: 2px solid grey;
+      padding: 0 16px;
 }
 
 .main > *:first-child {
@@ -78,4 +82,20 @@ h4 , h5 , h6 {
 
 .experience-subheading {
     display: inline-block;
+}
+
+.heading-article {
+    position: relative;
+    left: -16px;
+}
+
+.hire-me {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: black;
+    padding: 8px;
+    background: powderblue;
+    border-radius: 4px;
+
 }
