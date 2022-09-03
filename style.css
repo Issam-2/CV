@@ -6,6 +6,7 @@ box-sizing: border-box;
 
 html {
     font-family: "Roboto", sans-serif;
+    font-size: 16px;
 }
 
 body {
@@ -21,24 +22,24 @@ h4 , h5 , h6 {
 .header {
     text-align: center;
     background-color: cyan;
-    padding: 48px 16px;
+    padding: 3rem 1rem;
     position: relative;
-    padding-top: 72px;
+    padding-top: 4.5rem;
 
 }
 
 .main {
-    padding: 16px;
-    max-width: 800px;
+    padding: 1rem;
+    max-width: 60ch;
     margin: 0 auto;
 }
 
 .main > * + * {
-    margin-top: 48px ;
+    margin-top: 3rem ;
 }
 
 .nav {
-    padding: 4px 8px;
+    padding: 0.25rem 0.5rem;
     color: black;
 }
 
@@ -54,12 +55,12 @@ h4 , h5 , h6 {
 }
 
 .nav + .nav {
-    margin-left: 16px;
+    margin-left: 1rem;
 }
 
 .main > * {
-      border-top: 2px solid grey;
-      padding: 0 16px;
+      border-top: 0.125rem solid grey;
+      padding: 0 1rem;
 }
 
 .main > *:first-child {
@@ -86,16 +87,29 @@ h4 , h5 , h6 {
 
 .heading-article {
     position: relative;
-    left: -16px;
+    left: -1rem;
 }
 
 .hire-me {
     position: absolute;
-    top: 16px;
-    right: 16px;
+    top: 1rem;
+    right: 1rem;
     color: black;
-    padding: 8px;
+    padding: 0.5rem;
     background: powderblue;
-    border-radius: 4px;
+    border-radius: 0.25rem;
 
+}
+
+.header-gruppe {
+    font-size: 4rem;
+
+}
+
+.main-heading {
+    font-size: 1em;
+}
+
+.beruf{
+    font-size: 0.25em;
 }
