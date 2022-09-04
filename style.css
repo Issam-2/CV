@@ -36,12 +36,20 @@ h4 , h5 , h6 {
   
 }
 
+a,
+a:link,
+a:hover,
+a:visited,
+a:active {
+  color: black;
+}
+
 .header {
   text-align: center;
-  background-color: cyan;
   padding: 3rem 1rem;
   position: relative;
   padding-top: 4.5rem;
+  background-image: linear-gradient(235deg, snow, plum);
 
 }
 
@@ -107,14 +115,11 @@ h4 , h5 , h6 {
 }
 
 .nav:hover {
-
-  color: black;
-  background-color: beige;
+  background-color: plum;
 }
 
 .nav:active {
-  color: white;
-  background-color: brown;
+  background-color: violet;
 }
 
 @media screen and (min-width: 768px) {
@@ -141,7 +146,7 @@ h4 , h5 , h6 {
   }
 
   .main > * {
-    border-top: 0.125rem solid grey;
+    border-top: 0.125rem solid plum;
     padding: 0 1rem;
 }
 
@@ -169,4 +174,19 @@ h4 , h5 , h6 {
     align-items: baseline;
     justify-content: space-between;
   }
+}
+
+.footer {
+  margin-top: 3rem;
+  background-color: plum;
+  padding: 2rem;
+}
+
+.footer-text {
+  text-align: center;
+  margin: 0;
+}
+
+.footer-link {
+  color: black;
 }
