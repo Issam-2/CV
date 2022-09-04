@@ -31,6 +31,47 @@ h4 , h5 , h6 {
     font-family: "Oswald" sans-serif;
 }
 
+*::selection {
+  background-color: beige ;
+  
+}
+
+.header {
+  text-align: center;
+  background-color: cyan;
+  padding: 3rem 1rem;
+  position: relative;
+  padding-top: 4.5rem;
+
+}
+
+.header-gruppe {
+  font-size: 4rem;
+}
+
+.main-heading {
+  font-size: 1em;
+}
+
+.beruf{
+  font-size: 0.25em;
+}
+
+.beruf::after {
+  content: "😀";
+}
+
+.hire-me {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: black;
+  padding: 0.5rem;
+  background: powderblue;
+  border-radius: 0.25rem;
+
+}
+
 @media screen and (min-width: 992px) {
     .hire-me {
       position: fixed;
@@ -47,45 +88,33 @@ h4 , h5 , h6 {
     }
   }
 
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
   @media screen and (min-width: 768px) {
-    .main > * + * {
-      margin-top: 5rem;
+    .navigation {
+      flex-direction: row;
+      justify-content: center;
     }
   }
 
-.header {
-    text-align: center;
-    background-color: cyan;
-    padding: 3rem 1rem;
-    position: relative;
-    padding-top: 4.5rem;
-
-}
-
-.main {
-    padding: 1rem;
-    max-width: 60ch;
-    margin: 0 auto;
-}
-
-.main > * + * {
-    margin-top: 3rem ;
-}
-
-.nav {
+  .nav {
     padding: 0.25rem 0.5rem;
     color: black;
 }
 
 .nav:hover {
 
-    color: black;
-    background-color: beige;
+  color: black;
+  background-color: beige;
 }
 
 .nav:active {
-    color: white;
-    background-color: brown;
+  color: white;
+  background-color: brown;
 }
 
 @media screen and (min-width: 768px) {
@@ -94,75 +123,39 @@ h4 , h5 , h6 {
   }
 }
 
-.main > * {
-      border-top: 0.125rem solid grey;
-      padding: 0 1rem;
+.main {
+  padding: 1rem;
+  max-width: 60ch;
+  margin: 0 auto;
 }
+
+.main > * + * {
+  margin-top: 3rem ;
+}
+
+
+@media screen and (min-width: 768px) {
+    .main > * + * {
+      margin-top: 5rem;
+    }
+  }
+
+  .main > * {
+    border-top: 0.125rem solid grey;
+    padding: 0 1rem;
+}
+
 
 .main > *:first-child {
     border-top:  none;
 }
 
-    
-*::selection {
-    background-color: beige ;
-    
-}
 
-.beruf::after {
-    content: "😀";
-}
-
-/*.experience-heading {
-    display: inline-block;
-}
-*/
-
-/*}.experience-subheading {
-    display: inline-block;
-}
-*/
 .heading-article {
     position: relative;
     left: -1rem;
 }
 
-.hire-me {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    color: black;
-    padding: 0.5rem;
-    background: powderblue;
-    border-radius: 0.25rem;
-
-}
-
-.header-gruppe {
-    font-size: 4rem;
-
-}
-
-.main-heading {
-    font-size: 1em;
-}
-
-.beruf{
-    font-size: 0.25em;
-}
-
-.navigation {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-@media screen and (min-width: 768px) {
-  .navigation {
-    flex-direction: row;
-    justify-content: center;
-  }
-}
 
 .experience-header {
    display: flex;
