@@ -88,8 +88,10 @@ h4 , h5 , h6 {
     background-color: brown;
 }
 
-.nav + .nav {
+@media screen and (min-width: 768px) {
+  .nav + .nav {
     margin-left: 1rem;
+  }
 }
 
 .main > * {
@@ -111,14 +113,15 @@ h4 , h5 , h6 {
     content: "😀";
 }
 
-.experience-heading {
+/*.experience-heading {
     display: inline-block;
 }
+*/
 
-.experience-subheading {
+/*}.experience-subheading {
     display: inline-block;
 }
-
+*/
 .heading-article {
     position: relative;
     left: -1rem;
@@ -146,4 +149,31 @@ h4 , h5 , h6 {
 
 .beruf{
     font-size: 0.25em;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.experience-header {
+   display: flex;
+   flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .experience-header {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
